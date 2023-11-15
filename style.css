@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blueviolet;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: darksalmon;
+    font-size:35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heart-container {
+    position: relative;
+    animation: pulse 1s infinite;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    filter: brightness(1.5);
+    transition: filter 0.5s ease-in-out;  
+}
+
+img:hover {
+    filter:brightness(5);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
